@@ -86,3 +86,31 @@ const calculator = {
 };
 
 console.log(calculator);
+
+
+//Arrow Functions
+
+const hello = () => {
+    console.log("Hello");
+}
+
+hello();
+
+
+// Set Timeout
+// setTimeout(function , timeout)
+
+console.log("Hi there !");
+
+setTimeout( () => {
+    console.log("Hello");
+}, 4000);
+
+console.log("Welcome");
+
+
+//setInterval(function,timeout)
+
+setInterval(()=>{
+    console.log("Hello there..!");
+},2000);
