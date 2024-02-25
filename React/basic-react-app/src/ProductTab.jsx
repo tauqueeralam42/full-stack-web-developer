@@ -1,16 +1,16 @@
-import Product from "./Product.jsx";
+import Product from "./Product"
 
 function ProductTab(){
-    let arr = ["hi-tech","hello","Y1"];
-    let obj = { a: "Hello", b : "Welcom", c : "H2"};
+    let options = ["hitech", "durable", "fast"];
+    let options2 = { a: "hitech", b: "durable", c: "fast" };
     return (
-        <div>
-        {/* React Props
-        Props are the information that you pass to a JSX tag */}
-            <Product title="Phone" price = {30000} />
-            <Product title="Laptop" price = {50000}/>
-            <Product title="Pen" price = {30} />
-        </div>
+        <>
+        <Product title="phone" price="30k" features={options} features2={options2}/>
+        <Product title="laptop" price={40000} />
+        <Product title="smart watch" price={1000} />
+        <Product title="pen" />
+        </>
     );
 }
+
 export default ProductTab;

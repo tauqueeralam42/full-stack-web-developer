@@ -1,15 +1,17 @@
 import './App.css';
-import Title from "./Title.jsx";
-import ProductTab from "./ProductTab.jsx"
+import Nav from './Nav';
+import FinCal from './FinCal';
+import ProductTab from './ProductTab';
 
 
 
 function App() {
 
   return (
-    <div>
-      <ProductTab/>
-    </div>
+    <>
+   <ProductTab/>
+    </>
+
   );
   
 }
