@@ -6,8 +6,8 @@ html {
     display: block;
   }
   .container {
-    margin: 100px;
-    width: 80%;
+    margin: auto;
+    width: 80vw;
     text-align: center;
     color: black;
   }
