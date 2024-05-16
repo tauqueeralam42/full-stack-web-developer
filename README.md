@@ -6,6 +6,18 @@ Welcome to my Full Stack Web Development journey repository! Here, I document my
 
 In this repository, I chronicle my experiences, challenges, and achievements as I learn the ropes of full-stack web development. This journey is not just about mastering technologies but also about understanding the principles and best practices that underpin modern web development.
 
+## CSS Projects
+
+### Project 1: [Parallax Effect Website](https://tauqueer-css-projects.netlify.app/1.parallax%20effect/)
+
+A website featuring captivating parallax scrolling, enhancing user experience with visually dynamic backgrounds.
+
+### Project 2: [Image Gallery](https://tauqueer-css-projects.netlify.app/2.image%20gallery/)
+
+A user-friendly collection of images, offering showcasing diverse visuals in an attractive layout.
+
+**For a live demo of these projects, visit [here](https://tauqueer-css-projects.netlify.app/).**
+
 
 ## JavaScript Projects
 
