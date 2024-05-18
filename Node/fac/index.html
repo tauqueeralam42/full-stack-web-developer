@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <h1>Factorial Calculator</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateFactorials()">Calculate</button>
+    <div id="result"></div>
+
+    <script>
+        function calculateFactorials() {
+            const number = document.getElementById('numberInput').value;
+            fetch(`/calculate?number=${number}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = 'Factorial numbers: ' + data.join(', ');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('result').innerText = 'Error occurred. Please try again.';
+                });
+        }
+    </script>
+</body>
+</html>
