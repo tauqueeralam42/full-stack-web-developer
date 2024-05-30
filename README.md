@@ -6,7 +6,7 @@ Welcome to my Full Stack Web Development journey repository! Here, I document my
 
 In this repository, I chronicle my experiences, challenges, and achievements as I learn the ropes of full-stack web development. This journey is not just about mastering technologies but also about understanding the principles and best practices that underpin modern web development.
 
-## CSS Projects
+# CSS Projects
 
 ### Project 1: [Parallax Effect Website](https://tauqueer-css-projects.netlify.app/1.parallax%20effect/)
 
@@ -19,26 +19,73 @@ A user-friendly collection of images, offering showcasing diverse visuals in an 
 **For a live demo of these projects, visit [here](https://tauqueer-css-projects.netlify.app/).**
 
 
-## JavaScript Projects
+# JavaScript Projects
 
-### Project 1: [Background Colour Changer](https://tauqueer-javascript-projects.netlify.app/1.colorchanger/)
+### Project 1: [Random Password Generator](https://tauqueer-javascript-projects.netlify.app/6.passwordgenerator/)
 
-This project allows users to change the background color of a webpage according to their choice.
+The Random Password Generator is a simple web application that allows users to generate secure, random passwords. The application offers customizable options to include numbers, uppercase letters, lowercase letters, and symbols. Additionally, users can specify the length of the password and easily copy the generated password to the clipboard.
+
+### Features
+- **Password Length:** Users can set the desired length of the password, ranging from 1 to 128 characters.
+- **Include Numbers:** Option to include numerical digits (0-9) in the password.
+- **Include Uppercase Letters:** Option to include uppercase alphabetic characters (A-Z).
+- **Include Lowercase Letters:** Option to include lowercase alphabetic characters (a-z).
+- **Include Symbols:** Option to include special characters (e.g., !@#$%^&*()) in the password.
+- **Copy to Clipboard:** Convenient button to copy the generated password to the clipboard with a single click.
+
 
 ### Project 2: [BMI Calculator](https://tauqueer-javascript-projects.netlify.app/2.bmicalculator/)
 
-This project calculates the Body Mass Index (BMI) based on user input for height and weight.
+A simple web app to calculate Body Mass Index (BMI) based on user input for height and weight. The app also provides a BMI range to determine if the user is underweight, normal weight, overweight, or obese.
 
-### Project 3: [Digital Clock](https://tauqueer-javascript-projects.netlify.app/3.digitalclock/)
+### Features
+- **Height Input:** Users can enter their height in centimeters.
+- **Weight Input:** Users can enter their weight in kilograms.
+- **BMI Calculation:** Calculates the BMI based on the input height and weight.
+- **BMI Range:** Indicates whether the user is underweight, normal weight, overweight, or obese.
 
-This project displays the current local time in a digital format.
+
+### Project 3: [Weather App](https://tauqueer-javascript-projects.netlify.app/7.weatherapp/)
+
+A web app to get weather information based on the user's location or any city name. The app provides detailed weather data including current temperature, feels-like temperature, sunrise and sunset times, wind speed, cloudiness, and humidity.
+
+### Features
+- **Your Weather:** Automatically fetches and displays the weather report for the user's current location based on their coordinates.
+- **Search by City:** Allows users to search for the weather of any city by entering the city name.
+- **Weather Data:** Provides the following details:
+  - Current temperature
+  - Feels-like temperature
+  - Sunrise time
+  - Sunset time
+  - Wind speed
+  - Cloudiness
+  - Humidity
 
 ### Project 4: [Guess the Number](https://tauqueer-javascript-projects.netlify.app/4.guessthenumber/)
 
-In this game, users are challenged to guess a randomly generated number between 1 and 100.
-<br><br>
+A simple web game where users have 5 chances to guess a randomly generated number. The game provides feedback on whether the guessed number is higher or lower than the target number and displays a list of all guesses made by the user.
 
-**For a live demo of these projects, visit [here](https://tauqueer-javascript-projects.netlify.app/).**
+### Features
+- **Random Number Generation:** Generates a random number between 1 and 100.
+- **User Input:** Allows the user to input their guess.
+- **Feedback:** Informs the user if their guess is too high, too low, or correct.
+- **Guess History:** Displays a list of all guesses made by the user.
+- **Limited Attempts:** Users have 5 chances to guess the correct number.
+
+### Project 5: [Tic Tac Toe](https://tauqueer-javascript-projects.netlify.app/8.tictactoe/)
+
+A web-based Tic Tac Toe game where two players can play against each other. The game provides information about the current player's turn, the game winner, or if the game is tied. A new game button appears when the game is over or tied. If a user wins, the winning combination is highlighted in green, and no further moves are allowed.
+
+### Features
+- **Current Turn Indicator:** Displays which player's turn it is.
+- **Game Winner:** Announces the winner and highlights the winning combination in green.
+- **Game Tie:** Announces if the game is tied.
+- **New Game Button:** Allows players to start a new game once the current game is over.
+- **Interactivity:** Players can click on the grid to make their moves until the game is over.
+<br>
+
+## **To see more of my JavaScript mini projects, you can click on the given link. [here](https://tauqueer-javascript-projects.netlify.app/).**
+
 
 
 
