@@ -23,10 +23,15 @@ function App() {
       return { ...prev, [name]: type === "checkbox" ? checked : value };
     });
   }
-
+  function submitHandler(event)
+  {
+    event.preventDefault();
+    console.log("Form Give DAta")
+    console.log(formData);
+  }
   return (
     <div>
-      <form>
+      <form onSubmit={submitHandler}>
         <label htmlFor="firstName">First Name</label>
         <br />
         <input
@@ -191,6 +196,8 @@ function App() {
           <input type="radio" id="pushNothing" name="pushNotification" value="No Push Notification" onChange={changeHandler} />
           <label htmlFor="pushNothing">No Push Notification</label>
         </fieldset>
+
+        <button>Submit</button>
       </form>
     </div>
   );
