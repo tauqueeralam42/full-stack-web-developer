@@ -103,6 +103,16 @@ The Random GIF Generator is a web application built with React.js that allows us
 - **Axios for HTTP Requests:** Uses Axios for making HTTP requests to the Giphy API.
 
 
+### Project: [React Blog Website](https://tauqueer-react-blog.netlify.app/)
+
+This project is a learning exercise focused on understanding and implementing the useContext hook in React. Through this project, you explored how to manage global state efficiently and provide data across components using React's Context API. The blog website fetches data from an API, demonstrating the use of fetch to retrieve JSON data.
+
+### Features Explored
+- **useContext Hook:** Implemented to manage global state and share data between components without prop drilling.
+- **Component Communication:** Demonstrated how useContext simplifies passing data down through component hierarchies.
+- **State Management:** Explored how to create a provider and consumer pattern to manage application-wide state.
+- **API Integration:** Used fetch to get JSON data from an API, showcasing how to work with external data sources in a React application.
+- **Learning Exercise:** Designed as a hands-on project to deepen understanding of React's Context API and hooks.
 
 
 
