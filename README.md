@@ -84,7 +84,23 @@ A web-based Tic Tac Toe game where two players can play against each other. The 
 - **Interactivity:** Players can click on the grid to make their moves until the game is over.
 <br>
 
-## **To see more of my JavaScript mini projects, you can click on the given link. [here](https://tauqueer-javascript-projects.netlify.app/).**
+**To see more of my JavaScript mini projects, you can click on the given link. [here](https://tauqueer-javascript-projects.netlify.app/).**
+
+# React Projects
+
+### Project: [Random GIF Generator](https://tauqueer-random-gif-generator.netlify.app/)
+
+The Random GIF Generator is a web application built with React.js that allows users to generate and view random GIFs. The application utilizes the Giphy API and Axios to fetch data from the API. It features two cards: one that automatically displays a random GIF and another that allows users to search for GIFs by category according to their preferences.
+
+### Features
+- **Random GIF:** Automatically displays a random GIF upon loading the application.
+- **Search by Category:** Users can search for GIFs by entering a category or keyword in the search input.
+- **Two Display Cards:** 
+  - **Card 1:** Displays a random GIF fetched from the Giphy API.
+  - **Card 2:** Allows users to search for and display GIFs based on their preferred category.
+- **Responsive Design:** The application is designed to be responsive and works well on various screen sizes.
+- **API Integration:** Utilizes the Giphy API to fetch random and category-based GIFs.
+- **Axios for HTTP Requests:** Uses Axios for making HTTP requests to the Giphy API.
 
 
 
