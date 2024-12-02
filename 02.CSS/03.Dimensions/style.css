@@ -1,0 +1,22 @@
+.box-1{
+    border: 1px solid black;
+    width: 300px;
+    max-height: 100px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: auto;
+    
+}
+.box-2 {
+    border: 1px solid red;
+    width: 200px;
+    height: 150px;
+    overflow: scroll;
+}
+
+.box-3 {
+    border: 1px solid blue;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
