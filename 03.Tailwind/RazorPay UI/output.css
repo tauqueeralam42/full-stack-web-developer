@@ -634,6 +634,10 @@ video {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
@@ -706,14 +710,28 @@ video {
   order: -1;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .my-20 {
@@ -927,6 +945,10 @@ video {
   width: 83.333333%;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -987,6 +1009,11 @@ video {
   width: 65%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1027,12 +1054,21 @@ video {
   max-width: 960px;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grow {
   flex-grow: 1;
 }
 
 .border-collapse {
   border-collapse: collapse;
+}
+
+.-translate-y-1 {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
@@ -1069,6 +1105,18 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1185,6 +1233,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(10rem * var(--tw-space-x-reverse));
   margin-left: calc(10rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1335,15 +1389,15 @@ video {
 }
 
 .bg-\[url\(\/Images\/CTABg\.svg\)\] {
-  background-image: url(/Images/CTABg.svg);
+  background-image: url(./Images/CTABg.svg);
 }
 
 .bg-\[url\(\/Images\/core-features-sectionBg\.svg\)\] {
-  background-image: url(/Images/core-features-sectionBg.svg);
+  background-image: url(./Images/core-features-sectionBg.svg);
 }
 
 .bg-\[url\(\/Images\/instant-settlement-bg\.svg\)\] {
-  background-image: url(/Images/instant-settlement-bg.svg);
+  background-image: url(./Images/instant-settlement-bg.svg);
 }
 
 .bg-cover {
@@ -1625,6 +1679,11 @@ video {
   color: rgb(82 90 118 / var(--tw-text-opacity));
 }
 
+.text-grayBlue {
+  --tw-text-opacity: 1;
+  color: rgb(52 74 108 / var(--tw-text-opacity));
+}
+
 .text-grayText {
   --tw-text-opacity: 1;
   color: rgb(129 133 151 / var(--tw-text-opacity));
@@ -1711,7 +1770,7 @@ video {
 }
 
 .hover\:bg-\[url\(\/Images\/instant-settlement-bghover\.svg\)\]:hover {
-  background-image: url(/Images/instant-settlement-bghover.svg);
+  background-image: url(./Images/instant-settlement-bghover.svg);
 }
 
 .hover\:text-grayBlue:hover {
