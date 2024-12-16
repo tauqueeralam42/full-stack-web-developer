@@ -33,6 +33,13 @@ const listTasks = () => {
   tasks.forEach((task, index) => console.log(`${index + 1} - ${task.task}`)); // Log each task with its index
 };
 
+function removeTask(index){
+  const tasks = loadTasks(); // Load existing tasks
+  tasks.splice(index-1,1); // Remove the task at the specified index
+  saveTasks(tasks); // Save updated tasks array to file
+  console.log("Task removed at index ", index); // Log the removed task
+}
+
 // Get command and argument from command line arguments
 const command = process.argv[2];
 const argument = process.argv[3];
@@ -42,6 +49,8 @@ if (command === "add") {
   addTask(argument);
 } else if (command === "list") {
   listTasks();
+}else if(command == "remove"){
+  removeTask(parseInt(argument));
 }else {
   console.log("Command not found !");
 }
