@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexo</title>
+</head>
+<body>
+
+    <label for="dropdown">Select Option:</label>
+    <select id="dropdown">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+    </select>
+
+    <button id="createBtn">Create</button>
+    <div id="btnContainer"></div>
+
+</body>
+<script>
+    function createColorButton(color) {
+        let btn = document.createElement("button");
+        btn.innerText = color;
+        btn.addEventListener("click", function() {
+            document.body.style.backgroundColor = color;
+        });
+        return btn;
+    }
+
+    document.getElementById("createBtn").addEventListener("click", function() {
+        let color = document.getElementById("dropdown").value;
+        let button = createColorButton(color);
+        document.getElementById("btnContainer").appendChild(button);
+    });
+</script>
+</html>

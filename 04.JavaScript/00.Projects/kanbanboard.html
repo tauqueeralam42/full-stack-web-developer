@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        gap: 5px;
+        padding: 20px;
+    }
+    .board{
+        border: solid 1px black;
+        height: 80vh;
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    .board:hover{
+        transform: scale(1.02);
+    }
+    .item{
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    .item:hover{
+        background-color: rgba(0, 0, 0, 0.709);
+        color: antiquewhite;
+    }
+    #create{
+        margin-left: 20px;
+         transition: transform 1s ease;
+    }
+    #create:hover {
+    transform: scale(1.5); 
+    color: black;
+    background-color: antiquewhite;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div id="todo" class="board">
+            <h4>Todo</h4>
+            <p draggable="true" class="item">React</p>
+            <p draggable="true" class="item">JS</p>
+        </div>
+        <div id="in-progress" class="board">
+            <h4>In Progress</h4>
+        </div>
+        <div id="done" class="board">
+            <h4>Done</h4>
+        </div>
+    </div>
+    <button id="create">Create</button>
+</body>
+<script>
+    document.getElementById("create").addEventListener("click", ()=> {
+        let value = prompt("Enter Task");
+        if(value == null) return
+        let task = document.createElement("p");
+        task.innerText = value;
+        task.classList.add("item");
+        task.setAttribute("draggable", true);
+        task.addEventListener("dragstart", () => {
+            task.classList.add("fly");
+        });
+        task.addEventListener("dragend", () => {
+            task.classList.remove("fly");
+        });
+        document.getElementById('todo').appendChild(task);
+    })
+    document.querySelectorAll(".board").forEach((board) => {
+        board.addEventListener("dragover", () => {
+            let element = document.querySelector(".fly");
+            board.appendChild(element)
+        })
+    })
+    document.querySelectorAll(".item").forEach((item) => {
+        item.addEventListener("dragstart", () => {
+            item.classList.add("fly");
+        });
+        item.addEventListener("dragend", () => {
+            item.classList.remove("fly");
+        });
+    })
+</script>
+
+</html>
