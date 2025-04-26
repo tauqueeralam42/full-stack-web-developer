@@ -1,0 +1,3 @@
+John Doe, Software Engineer, 50000
+Jane Smith, Project Manager, 60000
+Michael Johnson, Data Analyst, 45000
